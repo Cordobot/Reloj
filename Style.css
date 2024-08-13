@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Archivo: style.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-reloj, .contenedor-fecha {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    margin-bottom: 20px; 
+}
+
+.reloj-centrado, .fecha-centrada {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.reloj-centrado h1, .fecha-centrada h1 {
+    font-size: 2em; 
+    margin-bottom: 20px;
+}
+
+.hora-y-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hora-actual {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+#fecha-actual {
+    font-size: 50px;
+    margin: 0;
+}
+
+.btn24-btn12 {
+    display: flex;
+    gap: 10px; 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:nth-child(1) {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:nth-child(2) {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button:nth-child(1):hover {
+    background-color: #0056b3;
+}
+
+button:nth-child(2):hover {
+    background-color: #1e7e34;
+}
+
